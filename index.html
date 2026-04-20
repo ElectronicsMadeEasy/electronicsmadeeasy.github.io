@@ -1,56 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electronics Made Easy</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #3498db, #6dd5fa);
+            color: white;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            border: none;
+            background: white;
+            color: #3498db;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Cards */
+        .card {
+            display: inline-block;
+            width: 260px;
+            margin: 15px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
-<nav>
-   /* <div class="logo">
-        <img src="logo.png" alt="Logo">
-        <h2>Electronics Made Easy</h2>
-    </div>*/
-    
-    <div class="logo">
-    <a href="#">
-        <img src="logo.png" alt="Logo">
-    </a>
-    <h2>Electronics Made Easy</h2>
-</div>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h2>Electronics Made Easy</h2>
+        </div>
 
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <h1>Learn Embedded Systems Easily</h1>
         <p>From Basics to Real-Time Projects</p>
-        <button>Start Learning</button>
+        <button onclick="document.getElementById('courses').scrollIntoView()">Start Learning</button>
     </section>
 
-    <!-- Courses Section -->
-    <section class="courses">
+    <!-- Courses -->
+    <section id="courses">
         <h2>Courses</h2>
+
         <div class="card">
             <h3>Basics of Electronics</h3>
-            <p>Learn fundamental concepts of circuits and components.</p>
+            <p>Learn circuits, components, and fundamentals.</p>
         </div>
+
         <div class="card">
             <h3>Microcontrollers</h3>
-            <p>Learn PIC, Arduino and embedded programming.</p>
+            <p>PIC, Arduino, and embedded programming.</p>
+        </div>
+
+        <div class="card">
+            <h3>Real-Time Projects</h3>
+            <p>Build practical embedded systems.</p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects">
+    <!-- Projects -->
+    <section id="projects">
         <h2>Projects</h2>
-        <p>Real-world embedded systems projects coming soon.</p>
+        <p>Coming soon: Real-world embedded projects with explanations.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: yourmail@example.com</p>
     </section>
 
     <!-- Footer -->
