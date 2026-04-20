@@ -1,16 +1,63 @@
 body {
+    margin: 0;
     font-family: Arial;
-    text-align: center;
-    background-color: #f4f4f4;
 }
 
-h1 {
-    color: #2c3e50;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #3498db;
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #2c3e50;
     color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px;
+    background: #3498db;
+    color: white;
+}
+
+.hero button {
+    padding: 10px 20px;
     border: none;
+    background: white;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
