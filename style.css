@@ -4,39 +4,12 @@ body {
 }
 
 /* Navbar */
-/*nav {
+nav {
     display: flex;
     justify-content: space-between;
     background: #2c3e50;
     color: white;
     padding: 15px;
-}*/
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #2c3e50;
-    color: white;
-    padding: 10px 20px;
-}
-
-/* Logo container */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Logo image */
-.logo img {
-    width: 45px;
-    height: 45px;
-}
-
-/* Logo text */
-.logo h2 {
-    font-size: 20px;
-    margin: 0;
 }
 
 nav ul {
