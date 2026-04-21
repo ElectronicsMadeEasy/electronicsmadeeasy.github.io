@@ -151,3 +151,9 @@ html {
 .hidden {
     display: none;
 }
+
+.visitor {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
