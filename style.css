@@ -69,8 +69,8 @@ footer {
 }
 
 .logo img {
-    width: 40px;   /* adjust size */
-    height: 40px;
+    width: 20px;   /* adjust size */
+    height: 20px;
     object-fit: contain;
 }
 
