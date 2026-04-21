@@ -152,8 +152,7 @@ html {
     display: none;
 }
 
-.visitor {
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: center;
+.visitor img {
+    height: 20px;
+    vertical-align: middle;
 }
