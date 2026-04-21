@@ -1,67 +1,20 @@
+/* Reset */
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
 /* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #2c3e50;
     color: white;
-    padding: 15px;
+    padding: 15px 30px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Hero */
-.hero {
-    text-align: center;
-    padding: 80px;
-    background: #3498db;
-    color: white;
-}
-
-.hero button {
-    padding: 10px 20px;
-    border: none;
-    background: white;
-    color: #3498db;
-    font-weight: bold;
-}
-
-/* Sections */
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-/* Cards */
-.card {
-    display: inline-block;
-    width: 250px;
-    margin: 15px;
-    padding: 20px;
-    border: 1px solid #ddd;
-}
-
-/* Footer */
-footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
+/* Logo section */
 .logo {
     display: flex;
     align-items: center;
@@ -69,14 +22,92 @@ footer {
 }
 
 .logo img {
-    width: 20px;   /* adjust size */
-    height: 20px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
+.logo h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Nav links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #3498db;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #3498db;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background: #ecf0f1;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    display: inline-block;
+    width: 260px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
 .contact {
     background: #f4f4f4;
-    padding: 50px;
 }
 
 .contact-card {
@@ -103,10 +134,20 @@ footer {
     text-decoration: underline;
 }
 
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Smooth scroll */
 html {
     scroll-behavior: smooth;
 }
 
+/* Hidden class (IMPORTANT for contact toggle) */
 .hidden {
     display: none;
 }
