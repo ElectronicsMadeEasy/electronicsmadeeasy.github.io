@@ -61,3 +61,52 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;   /* adjust size */
+    height: 40px;
+    object-fit: contain;
+}
+
+.contact {
+    background: #f4f4f4;
+    padding: 50px;
+}
+
+.contact-card {
+    display: inline-block;
+    padding: 25px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 400px;
+}
+
+.contact-card h3 {
+    margin-top: 0;
+}
+
+.contact-card a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
