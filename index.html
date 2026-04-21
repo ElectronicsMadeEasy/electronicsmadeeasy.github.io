@@ -10,7 +10,7 @@
     <!-- Navbar -->
     <nav>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="./logo.png" alt="Logo">
             <h2>Electronics Made Easy</h2>
         </div>
         <ul>
@@ -71,10 +71,12 @@
                 </a>
             </p>
         </div>
-<div class="visitor">
-    👁️ 
-    <img src="https://api.visitorbadge.io/api/visitors?path=electronicsmadeeasy.github.io&label=%20&countColor=%233498db&labelColor=transparent" />
-</div>
+
+        <!-- ✅ Visitor Counter (NO BOX, PURE NUMBER) -->
+        <div class="visitor">
+            👁️ <span id="count">Loading...</span>
+        </div>
+
     </section>
 
     <!-- Footer -->
@@ -82,12 +84,19 @@
         <p>© 2026 Electronics Made Easy</p>
     </footer>
 
-    <!-- ✅ JavaScript moved here (IMPORTANT) -->
+    <!-- ✅ JavaScript -->
     <script>
     function showContact() {
         document.getElementById("contact").classList.remove("hidden");
         document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
     }
+
+    // Visitor Counter (CountAPI)
+    fetch("https://api.countapi.xyz/hit/electronicsmadeeasy/visits")
+      .then(res => res.json())
+      .then(res => {
+        document.getElementById("count").innerText = res.value;
+      });
     </script>
 
 </body>
