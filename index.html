@@ -5,28 +5,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<script>
-function showContact() {
-    document.getElementById("contact").classList.remove("hidden");
-    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-}
-</script>
-
 <body>
 
     <!-- Navbar -->
-<nav>
-    <div class="logo">
-        <img src="logo.png" alt="Logo">
-        <h2>Electronics Made Easy</h2>
-    </div>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#" onclick="showContact()">Contact</a></li>
-    </ul>
-</nav>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h2>Electronics Made Easy</h2>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" onclick="showContact()">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -54,35 +47,44 @@ function showContact() {
         <p>Real-world embedded systems projects coming soon.</p>
     </section>
 
+    <!-- Contact Section (Hidden initially) -->
     <section id="contact" class="contact hidden">
-    <h2>Contact</h2>
+        <h2>Contact</h2>
 
-    <div class="contact-card">
-        <h3>Shrinivas T N</h3>
+        <div class="contact-card">
+            <h3>Shrinivas T N</h3>
 
-        <p><strong>Qualification:</strong> Mastered in Electronics and Communication</p>
-        <p><strong>Profession:</strong> Electronics & Embedded Software Engineer</p>
+            <p><strong>Qualification:</strong> Mastered in Electronics and Communication</p>
+            <p><strong>Profession:</strong> Electronics & Embedded Software Engineer</p>
 
-        <p><strong>📞 Mobile:</strong> 
-            <a href="tel:9964545816">9964545816</a>
-        </p>
+            <p><strong>📞 Mobile:</strong> 
+                <a href="tel:9964545816">9964545816</a>
+            </p>
 
-        <p><strong>📧 Email:</strong> 
-            <a href="mailto:shrinivastn985@gmail.com">shrinivastn985@gmail.com</a>
-        </p>
+            <p><strong>📧 Email:</strong> 
+                <a href="mailto:shrinivastn985@gmail.com">shrinivastn985@gmail.com</a>
+            </p>
 
-        <p><strong>💬 WhatsApp:</strong> 
-            <a href="https://wa.me/919964545816?text=Hi,%20I%20am%20interested.%20I%20want%20to%20know%20more%20about%20your%20Embedded%20Systems%20course." target="_blank">
-    Chat on WhatsApp
-</a>
-        </p>
-    </div>
-</section>
+            <p><strong>💬 WhatsApp:</strong> 
+                <a href="https://wa.me/919964545816?text=Hi,%20I%20am%20interested.%20I%20want%20to%20know%20more%20about%20your%20Embedded%20Systems%20course." target="_blank">
+                    Chat on WhatsApp
+                </a>
+            </p>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>© 2026 Electronics Made Easy</p>
     </footer>
+
+    <!-- ✅ JavaScript moved here (IMPORTANT) -->
+    <script>
+    function showContact() {
+        document.getElementById("contact").classList.remove("hidden");
+        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    }
+    </script>
 
 </body>
 </html>
