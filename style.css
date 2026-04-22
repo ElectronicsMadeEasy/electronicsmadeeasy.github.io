@@ -1,44 +1,159 @@
-/* Content Section (for course details) */
-.content-section {
-    padding: 40px 20px;
-    text-align: left;
-    max-width: 800px;
-    margin: auto;
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.content-section h2 {
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+}
+
+/* Logo section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Nav links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 100px 20px;
+    background: #3498db;
+    color: white;
 }
 
-.content-section ul {
-    line-height: 1.8;
-    font-size: 16px;
-}
-
-.content-section li {
+.hero h1 {
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
-/* Back button styling */
-.content-section button {
+.hero p {
+    font-size: 18px;
+}
+
+.hero button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #3498db;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background: #ecf0f1;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    display: inline-block;
+    width: 260px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact {
+    background: #f4f4f4;
+}
+
+.contact-card {
+    display: inline-block;
+    padding: 25px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 400px;
+}
+
+.contact-card h3 {
+    margin-top: 0;
+}
+
+.contact-card a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
     background: #2c3e50;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
+    padding: 15px;
 }
 
-.content-section button:hover {
-    background: #1a252f;
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
 }
 
-.card {
-    cursor: pointer;
+/* Hidden class (IMPORTANT for contact toggle) */
+.hidden {
+    display: none;
 }
 
-.courses {
-    transition: 0.3s;
+.visitor {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
 }
