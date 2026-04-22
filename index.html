@@ -25,39 +25,20 @@
     <section class="hero">
         <h1>Learn Embedded Systems Easily</h1>
         <p>From Basics to Real-Time Projects</p>
-        <p>Real-time training | Interview preparation | Live projects</p>
-        <button onclick="scrollToCourses()">Start Learning</button>
+        <button>Start Learning</button>
     </section>
 
     <!-- Courses Section -->
     <section class="courses">
         <h2>Courses</h2>
-
-        <div class="card" onclick="showBasics()">
+        <div class="card">
             <h3>Basics of Electronics</h3>
             <p>Learn fundamental concepts of circuits and components.</p>
         </div>
-
         <div class="card">
             <h3>Microcontrollers</h3>
             <p>Learn PIC, Arduino and embedded programming.</p>
         </div>
-    </section>
-
-    <!-- Basics Content Section -->
-    <section id="basicsContent" class="hidden content-section">
-        <h2>Basics of Electronics</h2>
-
-        <ul>
-            <li><b>Ohm’s Law:</b> Defines relation between Voltage, Current and Resistance (V = IR)</li>
-            <li><b>Resistors:</b> Used to limit current</li>
-            <li><b>Capacitors:</b> Store electrical energy temporarily</li>
-            <li><b>Inductors:</b> Store energy in magnetic field</li>
-            <li><b>Diodes:</b> Allow current in one direction</li>
-            <li><b>Transistors:</b> Used as switch and amplifier</li>
-        </ul>
-
-        <button onclick="goBack()">⬅ Back to Courses</button>
     </section>
 
     <!-- Projects Section -->
@@ -85,16 +66,18 @@
             </p>
 
             <p><strong>💬 WhatsApp:</strong> 
-                <a href="https://wa.me/919964545816" target="_blank">
+                <a href="https://wa.me/919964545816?text=Hi,%20I%20am%20interested.%20I%20want%20to%20know%20more%20about%20your%20Embedded%20Systems%20course." target="_blank">
                     Chat on WhatsApp
                 </a>
             </p>
         </div>
 
+        <!-- 👁️ Visitor Counter (Stable Version) -->
         <div class="visitor">
             👁️ 
             <img src="https://api.visitorbadge.io/api/visitors?path=electronicsmadeeasy.github.io&label=&countColor=%233498db" />
         </div>
+
     </section>
 
     <!-- Footer -->
@@ -104,25 +87,10 @@
 
     <!-- JavaScript -->
     <script>
-        function showContact() {
-            document.getElementById("contact").classList.remove("hidden");
-            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-        }
-
-        function scrollToCourses() {
-            document.querySelector(".courses").scrollIntoView({ behavior: "smooth" });
-        }
-
-        function showBasics() {
-            document.querySelector(".courses").style.display = "none";
-            document.getElementById("basicsContent").classList.remove("hidden");
-            document.getElementById("basicsContent").scrollIntoView({ behavior: "smooth" });
-        }
-
-        function goBack() {
-            document.querySelector(".courses").style.display = "block";
-            document.getElementById("basicsContent").classList.add("hidden");
-        }
+    function showContact() {
+        document.getElementById("contact").classList.remove("hidden");
+        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    }
     </script>
 
 </body>
